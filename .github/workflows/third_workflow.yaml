@@ -5,8 +5,8 @@ jobs:
     run-first-command:
         runs-on: ubuntu-latest
         steps:
-          - name: Display curent path
-            run: pwd
           - name: Display files
             run: ls -a
-              
+          - uses: actions/checkout@v4
+          - name: Display files
+            run: ls -a  
