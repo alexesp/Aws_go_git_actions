@@ -8,8 +8,8 @@ jobs:
     run-first-command:
         runs-on: ubuntu-latest
         steps:
-          - name: Display files
-            run: ls -a
+          #- name: Display files
+            #run: ls -a
           #- uses: actions/checkout@v4
           #- name: Copy files
             #run: 

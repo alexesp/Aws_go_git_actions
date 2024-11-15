@@ -1,0 +1,17 @@
+name: Firth-Workflow
+on: 
+    workflow_run:
+      workflows: [Fourth-Workflow]
+      types:
+      - completed
+jobs:
+    success-command:
+        runs-on: ubuntu-latest
+        if: ${{github.event.workflow_run.conclusion == 'success'}}
+        steps:
+          - run: echo "Success"
+    failure-command:
+        runs-on: ubuntu-latest
+        if: ${{github.event.workflow_run.conclusion == 'failure'}}
+        steps:
+            - run: echo "Faild"
