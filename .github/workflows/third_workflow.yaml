@@ -7,12 +7,12 @@ jobs:
         steps:
           - name: Display files
             run: ls -a
-          #- uses: actions/checkout@v4
-          - name: Copy files
-            run: 
-              git init
-              git remote add origin "https://$GITHUB_ACTOR:${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git"
-              git fetch origin
-              git sheckout main
+          - uses: actions/checkout@v4
+          #- name: Copy files
+           # run: 
+              #git init
+             # git remote add origin "https://$GITHUB_ACTOR:${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git"
+              #git fetch origin
+             # git sheckout main
           - name: Display files
             run: ls -a
