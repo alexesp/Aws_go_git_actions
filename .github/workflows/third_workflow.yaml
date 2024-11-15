@@ -6,6 +6,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Display curent path
-            run: 
-              pwd
-              ls -a
+            run: pwd
+          - name: Display files
+            run: ls -a
+              
