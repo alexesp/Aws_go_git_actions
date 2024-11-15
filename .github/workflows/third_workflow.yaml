@@ -1,0 +1,11 @@
+name: Third-Workflow
+on: [push]
+
+jobs:
+    run-first-command:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Display curent path
+            run: 
+              pwd
+              ls -a
