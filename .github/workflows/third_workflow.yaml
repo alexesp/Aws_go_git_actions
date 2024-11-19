@@ -15,4 +15,4 @@ jobs:
               #git fetch origin
              # git sheckout main
           - name: Display files
-            run: lsds -a
+            run: ls -a
