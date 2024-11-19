@@ -2,7 +2,7 @@ name: Sixth Workflow
 on: 
     #[push, issues, pull_request]
     push:
-      branches:
+      branches: 
         - main
       #branches-ignore:
         #- "page/blog"
