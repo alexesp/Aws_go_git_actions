@@ -1,5 +1,22 @@
 name: Sixth Workflow
-on: [push, issues, pull_request]
+on: 
+    #[push, issues, pull_request]
+    push:
+      branches:
+        - main
+      #branches-ignore:
+        #- "page/blog"
+        # - "page/*"   // page/about page/blog page/contactos 
+       # - "!page/blog" //ignorar ejcucion
+        #tags:
+            #- "v1.*"
+        #- v1   v1.1 1.1.2  
+        #paths:
+            #-"**.html
+   # issues:
+       # types: [edited, deleted]
+    #pull_request:
+        #types: [assigned, closed]
 
 jobs:
   run-first-command:
